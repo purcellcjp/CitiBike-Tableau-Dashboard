@@ -63,10 +63,10 @@ The dataset used was the [January 2024 CitiBike Trip Data](https://s3.amazonaws.
 -- Members
 
 - Who takes longer single trips?
--- Casual memebers
+-- Casual members
 
 - What are the peak hours of use?
--- Monday - Friday 8 AM and 5 PM
+-- Monday through Friday 8 AM and 5 PM
 
 - What is the average trip distance and duration?
 -- 1.11 miles and 10.8 minutes
