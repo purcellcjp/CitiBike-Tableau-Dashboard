@@ -49,9 +49,12 @@ The analytics are dynamically controlled by the following Filters:
 - Distance Traveled
 
 
+
 ## Presentation:  
 
 [Tableau Dashboard](https://public.tableau.com/views/CitiBike_17303964060410/CitiBikeDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+![Dashboard](Images/CitiBikeDashboard.jpg)
 
 ## Dataset
 
@@ -63,11 +66,10 @@ The dataset used was the [January 2024 CitiBike Trip Data](https://s3.amazonaws.
 -- Members
 
 - Who takes longer single trips?
--- Casual memebers
+-- Casual members
 
 - What are the peak hours of use?
 -- Monday - Friday 8 AM and 5 PM
 
 - What is the average trip distance and duration?
 -- 1.11 miles and 10.8 minutes
-
