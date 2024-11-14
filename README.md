@@ -2,74 +2,67 @@
 
 ## Problem
 
-You have been hired as the lead analyst for the [New York Citi Bike](https://en.wikipedia.org/wiki/Citi_Bike) program. You are now resonsible for overseeing the largest bike-sharing program in the United StatesCitibike is the largest bike sharing program in the United States. In this new role, you will b expected to generate regular reports for city officials looking to publicize and improve the city program.
+You have been hired as the lead analyst for the [New York Citi Bike](https://en.wikipedia.org/wiki/Citi_Bike) program. You are now resonsible for overseeing the largest bike-sharing program in the United States. In this new role, you will b expected to generate regular reports for city officials looking to publicize and improve the city program.
 
-Datasets: Bike data is collected, organized, and made public on the [Citi Bike Data](https://www.citibikenyc.com/system-data) webpage.
+In this project, I created Tableau visualizations, dashboards and a story to analyze BikeCiti trip data.
 
-## Task
-
-**Design 2-5 visualization for City Officials and Answer the following Questions and explore the data for decision makers 
-
-1. What are the peak hours in which bikes are used ?
-2. What are the top 10 stations in the city for starting a journey?
-3. What are the top 10 stations in the city for ending a journey?  
-4. What is the gender breakdown of active participants (Male v. Female)?
-4. How does the average trip duration change by age?
-5. Any additional findings. 
-
-**Advanced Option**
-
-* Design a dashboard with an analysis explaining why the phenomena may be occuring. 
-
-**City officials would also like to see one of the following visualizations:**
-
-1. (Basic) A static map that plots all bike stations with a visual indication of the most popular locations to start and end a journey with zip code data overlaid on top.
-2. (Advanced) A dynamic map that shows how each station's popularity changes over time (by month and year).  
-
-* The map includes a write-up unveiling any trends that were noticed during analysis.
 
 ## Solution
 
-A dynamic Tableau dashboard was created to provide real time analytics of the unique trips between stations that were made for a specified period. The dashboard contains visualizations on the following details:
+I decided to focus on the 2023 CitiBike trip data. I limited the data to the top 10 Starting Stations, in order to comply with the data size limitations on Tableau Public. I used Python Panda DataFrames to load the 40 trip data files. The data was cleaned of null vales, combined, and then exported to a single CSV file.
 
-- Map of Trip Routes
-- Station Count
-- Average Trip Distance
-- Average Trip Duration (in minutes)
-- User Membership
-- Bicycle Type Used
-- Top 5 End Station Destinations
-- Peak Riding Times
+Datasets: Bike data is collected, organized, and made public on the [Citi Bike Data](https://www.citibikenyc.com/system-data) webpage.
 
-The analytics are dynamically controlled by the following Filters:
+## Findings
 
-- Date Range
-- Start Station
-- End Station
-- Distance Traveled
+- Peak riding times on Monday - Friday are between 7 - 9 AM and 4 - 7 PM. Where the peak times on Saturday and Sunday were between 12 - 4 PM.
+
+- Trips volume increased in the summer months. This includes both ride duration, ride distances, and number of trips.
+
+- Classic bicycles are the most popular type of bike used. Both member types, casual and members used regurlar bicycles the most. This could be due to increased cost and lack of availability.
+
+## Analysis
+
+The main questions I answered  for the analysis of CitiBike rider history, are;
+
+1. Peak Riding times of the day of the week
+
+2. What are the average trip distances and durations throughout the year.
+
+3. What are the perfered type of trips being taken and how they vary between members and casual riders.
+
+## Visualizations
+
+To determine the peak riding times, I created a dynamic matrix of the number of rides by day and hour.
+
+![alt text](Images/PeakRidingTimes.jpg)
+
+
+Trip distances and durations
+
+![alt text](Images/AverageTripDistancebyDay.jpg)
+![alt text](Images/AverageTripDistancebyMonth.jpg)
+![alt text](Images/AverageTripDurationbyDay.jpg)
+![alt text](Images/AverageTripDurationbyMonth.jpg)
+![alt text](Images/AverageDistanceFrequencyPlot.jpg)
+
+Trip Frequencies and Type
+
+![alt text](Images/TripFrequencybyMonthBarChart.jpg)
+![alt text](Images/MemberTypeTripFrequency.jpg)
+
+## Dashboards
+
+![alt text](Images/DashboardMain.jpg)
+
+![alt text](Images/DashboardTrip.jpg)
 
 
 
 ## Presentation:  
 
-[Tableau Dashboard](https://public.tableau.com/views/CitiBike_17303964060410/CitiBikeDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Tableau Dashboard](https://public.tableau.com/views/CitiBike2023_17315468207100/CitiBikeStory?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![Dashboard](Images/CitiBikeDashboard.jpg)
 
-## Dataset
 
-The dataset used was the [January 2024 CitiBike Trip Data](https://s3.amazonaws.com/tripdata/202401-citibike-tripdata.csv.zip).
 
-## Analysis of January 2024 CitiBike data
-
-- Who uses the bike more - members are casual riders?
--- Members
-
-- Who takes longer single trips?
--- Casual members
-
-- What are the peak hours of use?
--- Monday through Friday 8 AM and 5 PM
-
-- What is the average trip distance and duration?
--- 1.11 miles and 10.8 minutes
