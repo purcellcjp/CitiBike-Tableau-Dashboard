@@ -87,7 +87,8 @@ i suspect these users were sight seeing and would return to their starting locat
 
 ## Presentation:  
 
-[Tableau Dashboard](https://public.tableau.com/views/CitiBike2023_17315468207100/CitiBikeStory?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Tableau Dashboard](https://public.tableau.com/views/CitiBike2023_17315468207100/CitiBikeStory?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+                    
 
 
 
