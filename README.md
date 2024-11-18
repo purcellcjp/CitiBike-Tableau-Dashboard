@@ -61,7 +61,7 @@ The average daily and monthly trip durations were between 13 and 18 minutes.
 
 4. Trip Frequencies and Type
 
-Trip frequencies increased in the summer and early fall months compared to the winter and late fall. The one surprise was that October 2024 had the second highest monthly frequency. This is probably due to sunny and above average temperatures that month.
+Trip frequencies increased in the summer and early fall months compared to the winter and late fall. The one surprise was that October 2023 had the second highest monthly frequency. This is probably due to sunny and above average temperatures that month.
 
 ![alt text](Images/TripFrequencybyMonthBarChart.jpg)
 
